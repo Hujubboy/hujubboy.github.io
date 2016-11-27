@@ -2,8 +2,24 @@
 <html>
 <head>
     <title>Login</title>
-    <link rel="stylesheet" href="login.css"/>
-    <script src="login.js"></script>
+    <style type="text/css">
+    </style>
+    <script>
+        clickSubmit = function() {
+            var x = document.getElementById('pass');
+            if (x.value == '8324') {
+                location.href="main.html";
+            } else {
+                alert('fail');
+            }  
+        }
+        
+        init function() {
+            document.getElementById('submit').onclick = clickSubmit;
+        }
+
+        window.onload = init;
+    </script>
 </head>
 <body>
     <fieldset>
